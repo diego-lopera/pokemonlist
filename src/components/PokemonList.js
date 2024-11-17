@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./PokemonList.css";
 
 const PokemonList = ({ pokemons, sortBy, setSortBy }) => {
   const handleSort = (key) => {
@@ -13,21 +14,21 @@ const PokemonList = ({ pokemons, sortBy, setSortBy }) => {
   });
 
   return (
-    <div>
-      <div>
-        <button onClick={() => handleSort("weight")}>Sort by Weight</button>
-        <button onClick={() => handleSort("id")}>Sort by Number</button>
-        <button onClick={() => handleSort("height")}>Sort by Height</button>
+    <div className="container">
+      <div className="sort-buttons">
+        <button onClick={() => handleSort("weight")}>Ordenar por peso</button>
+        <button onClick={() => handleSort("id")}>Ordenar por numero</button>
+        <button onClick={() => handleSort("height")}>Ordenar por altura</button>
       </div>
-      <ul>
+      <ul className="pokemon-list">
         {sortedPokemons.map((pokemon) => (
-          <li key={pokemon.id}>
+          <li className="pokemon-card" key={pokemon.id}>
             <Link to={`/pokemon/${pokemon.id}`}>
               <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-              <p>{pokemon.name}</p>
-              <p>Weight: {pokemon.weight}</p>
-              <p>Height: {pokemon.height}</p>
-              <p>Number: {pokemon.id}</p>
+              <p className="pokemonName">{pokemon.name.toUpperCase()}</p>
+              <p>Peso: {pokemon.weight}</p>
+              <p>Altura: {pokemon.height}</p>
+              <p>Numero: {pokemon.id}</p>
             </Link>
           </li>
         ))}

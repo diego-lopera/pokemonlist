@@ -11,6 +11,7 @@ export const useFetch = (url) => {
         try {
             const response = await axios.get(url);
             setData(response.data);
+            console.log(response.data);
         } catch (err) {
             setError(err.message);
         } finally {

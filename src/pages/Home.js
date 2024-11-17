@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useFetch } from "../hooks/useFetch";
 import PokemonList from "../components/PokemonList";
+import "./Home.css";
 
 const Home = () => {
   const [pokemons, setPokemons] = useState([]);
@@ -24,12 +25,12 @@ const Home = () => {
     }
   }, [data, fetchPokemons]);
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading) return <p className="loading">Loading...</p>;
+  if (error) return <p className="error">Error: {error}</p>;
 
   return (
-    <div>
-      <h1>Pokemon List</h1>
+    <div className="home-container">
+      <h1>My Pokemon List</h1>
       <PokemonList pokemons={pokemons} sortBy={sortBy} setSortBy={setSortBy} />
     </div>
   );
