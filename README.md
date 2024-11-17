@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Guía de inicio de pokemonlist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Instrucciones para ejecutar la aplicación localmente
 
-In the project directory, you can run:
+Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 
-### `npm start`
+### 1. Clona el repositorio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Primero, clona este repositorio en tu máquina local usando el siguiente comando:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/tu-usuario/tu-repositorio.git
+```
 
-### `npm test`
+### 2. Instala las dependencias
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Accede a la carpeta del proyecto y luego instala las dependencias necesarias utilizando el siguiente comando:
 
-### `npm run build`
+```bash
+cd pokemonlist
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Ejecuta la aplicación en modo de desarrollo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Una vez que las dependencias estén instaladas, puedes ejecutar la aplicación en tu entorno local con el siguiente comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+npm start
+```
 
-### `npm run eject`
+Esto iniciará la aplicación en modo de desarrollo. Puedes abrir http://localhost:3000 en tu navegador para ver la aplicación en funcionamiento.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+La página se recargará automáticamente cuando realices cambios en los archivos del proyecto. También podrás ver errores de lint en la consola.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Srcipts disponibles
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+En el directorio del proyecto, puedes ejecutar los siguientes comandos:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### npm run build
+```bash
+npm run build
+```
+Genera una versión optimizada de la aplicación para producción en la carpeta build.
 
-## Learn More
+Este comando optimiza y empaqueta React en modo de producción para obtener el mejor rendimiento posible. El build estará minificado y los nombres de los archivos incluirán los hashes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Tu aplicación estará lista para ser desplegada.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### npm run eject
+```bash
+npm run eject
+```
 
-### Code Splitting
+#### Nota: esta operación es irreversible. Una vez que eject sea ejecutado, no podrás volver atrás.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Si no estás satisfecho con la configuración predeterminada, puedes ejecutar eject en cualquier momento. Esto eliminará las dependencias de construcción del proyecto y copiará los archivos de configuración directamente a tu proyecto, dándote control total sobre ellos.
 
-### Analyzing the Bundle Size
+A partir de ese momento, podrás personalizar la configuración de Webpack, Babel, ESLint, entre otras, según lo desees. Sin embargo, si no necesitas esa personalización, no es necesario ejecutar eject, ya que la configuración predeterminada es adecuada para proyectos pequeños y medianos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Dependencias y librerías utilizadas
 
-### Making a Progressive Web App
+Este proyecto utiliza las siguientes dependencias principales:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- React: Librería para la construcción de interfaces de usuario.
+- React-dom: Proporciona métodos para interactuar con el DOM.
+- React-scripts: Utilitarios para gestionar las configuraciones y scripts de la aplicación.
+- Axios: Para realizar peticiones HTTP.
+- React-router-dom: Para manejar la navegación dentro de la aplicación.
 
-### Advanced Configuration
+Para más detalles sobre las dependencias, puedes consultar el archivo package.json del proyecto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Desarrollador por: 
+#### Diego Alexis Lopera Moncada
