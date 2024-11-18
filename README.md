@@ -10,7 +10,7 @@ Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 Primero, clona este repositorio en tu máquina local usando el siguiente comando:
 
 ```bash
-git clone https://github.com/tu-usuario/tu-repositorio.git
+git clone https://github.com/diego-lopera/pokemonlist
 ```
 
 ### 2. Instala las dependencias

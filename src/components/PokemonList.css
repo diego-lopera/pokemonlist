@@ -1,80 +1,79 @@
-/* Container for sorting buttons */
+/* Contenedor para los botones de ordenamiento */
 .sort-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-  
-  .sort-buttons button {
-    background: linear-gradient(135deg, #f6d365, #fda085);
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    font-family: "Poppins", Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.6rem 1.2rem;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s ease-in-out;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  .sort-buttons button:hover {
-    transform: translateY(-3px);
-    background: linear-gradient(135deg, #fda085, #f6d365);
-  }
-  
-  /* List of Pokemon cards */
-  .pokemon-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* Pokemon card styles */
-  .pokemon-card {
-    background: linear-gradient(145deg, #ffffff, #f1f1f1);
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 1.5rem;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-  }
-  
-  .pokemon-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .pokemon-card img {
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .pokemon-card p {
-    margin: 0.4rem 0;
-    color: #444;
-    font-size: 1rem;
-    font-family: "Poppins", Arial, sans-serif;
-    font-weight: 500;
-  }
+  display: flex; /* Usamos Flexbox para alinear los botones horizontalmente */
+  justify-content: center; /* Centra los botones en el contenedor */
+  gap: 1rem; /* Espacio entre los botones */
+  margin-bottom: 2rem; /* Margen inferior */
+}
 
-  .pokemon-card .pokemonName {
-    font-weight: 700;
-    font-size: 1.4rem;
-  }
-  
-  .pokemon-card a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .pokemon-card a:hover {
-    color: #fda085;
-  }
-  
+.sort-buttons button {
+  background: linear-gradient(135deg, #f6d365, #fda085); /* Degradado de color para los botones */
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra sutil para el botón */
+}
+
+.sort-buttons button:hover {
+  transform: translateY(-3px); /* Efecto de elevar el botón al hacer hover */
+  background: linear-gradient(135deg, #fda085, #f6d365); /* Cambio de dirección del degradado en hover */
+}
+
+/* Lista de tarjetas de pokemones */
+.pokemon-list {
+  display: grid; /* Usamos un diseño de cuadrícula para las tarjetas */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hacemos que las columnas sean responsivas */
+  gap: 1.5rem; /* Espacio entre las tarjetas */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para cada tarjeta de Pokémon */
+.pokemon-card {
+  background: linear-gradient(145deg, #ffffff, #f1f1f1); /* Degradado de fondo */
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s; /* Animación para el hover */
+}
+
+.pokemon-card:hover {
+  transform: translateY(-8px); /* Eleva la tarjeta al pasar el cursor */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+.pokemon-card img {
+  width: 80%; /* Ajustamos el tamaño de la imagen */
+  border-radius: 10px; /* Bordes redondeados en la imagen */
+  margin-bottom: 1rem; /* Espacio debajo de la imagen */
+}
+
+.pokemon-card p {
+  margin: 0.4rem 0;
+  color: #444;
+  font-size: 1rem;
+  font-family: "Poppins", Arial, sans-serif;
+  font-weight: 500;
+}
+
+.pokemon-card .pokemonName {
+  font-weight: 700;
+  font-size: 1.4rem; /* Aumentamos el tamaño y peso de la fuente del nombre del Pokémon */
+}
+
+.pokemon-card a {
+  text-decoration: none; /* Quitamos el subrayado del enlace */
+  color: inherit; /* El enlace toma el color del texto */
+}
+
+.pokemon-card a:hover {
+  color: #fda085; /* Cambiamos el color al hacer hover */
+}

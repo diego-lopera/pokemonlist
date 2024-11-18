@@ -1,4 +1,4 @@
-/* General Container */
+/* Contenedor general */
 .info-container {
     max-width: 900px;
     margin: 0 auto;
@@ -6,10 +6,9 @@
     text-align: center;
     font-family: "Poppins", Arial, sans-serif;
     color: #333;
-    /* background: linear-gradient(145deg, #ffffff, #e6e6e6); Fondo general */
 }
 
-/* Card for Basic Information */
+/* Card de información general */
 .info-card {
     display: flex;
     align-items: center;
@@ -25,7 +24,7 @@
     text-align: center;
 }
 
-/* Pokemon Image */
+/* Imagen Pokemon */
 .pokemon-image {
     max-width: 200px;
     border-radius: 15px;
@@ -37,7 +36,7 @@
     transform: scale(1.1);
 }
 
-/* Info Details (con fondo degradado naranja) */
+/* Detalles de informacion (con fondo degradado naranja) */
 .info-details {
     text-align: center; /* Centrado horizontal */
     font-size: 1rem;
